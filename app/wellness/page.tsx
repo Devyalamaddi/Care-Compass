@@ -30,37 +30,37 @@ export default function WellnessPage() {
       description: "Start your day with intention and mindfulness",
       duration: "15 min",
       category: "Mindfulness",
-      color: "bg-gradient-to-r from-orange-400 to-pink-400",
+      color: "bg-orange-400",
     },
     {
       title: "Breathing Exercise",
       description: "Calm your mind with guided breathing",
       duration: "5 min",
       category: "Relaxation",
-      color: "bg-gradient-to-r from-blue-400 to-cyan-400",
+      color: "bg-blue-400",
     },
     {
       title: "Nature Walk",
       description: "Connect with nature for mental clarity",
       duration: "20 min",
       category: "Physical",
-      color: "bg-gradient-to-r from-green-400 to-emerald-400",
+      color: "bg-green-400",
     },
     {
       title: "Evening Reflection",
       description: "Process your day and prepare for rest",
       duration: "10 min",
       category: "Mindfulness",
-      color: "bg-gradient-to-r from-purple-400 to-indigo-400",
+      color: "bg-purple-400",
     },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-green-50 p-3 sm:p-6">
+    <div className="min-h-screen bg-rose-50 p-3 sm:p-6">
       <div className="max-w-7xl mx-auto space-y-6 sm:space-y-8">
         {/* Header */}
         <div className="text-center space-y-2 sm:space-y-4">
-          <h1 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-4xl font-bold text-green-600">
             Wellness Dashboard
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">

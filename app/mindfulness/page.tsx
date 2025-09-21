@@ -30,7 +30,7 @@ export default function MindfulnessPage() {
       description: "Focus on your breath to center your mind",
       duration: "5-20 min",
       icon: Wind,
-      color: "bg-gradient-to-r from-blue-400 to-cyan-400",
+      color: "bg-blue-400",
       category: "Breathing",
     },
     {
@@ -39,7 +39,7 @@ export default function MindfulnessPage() {
       description: "Progressive relaxation through body awareness",
       duration: "10-30 min",
       icon: Leaf,
-      color: "bg-gradient-to-r from-green-400 to-emerald-400",
+      color: "bg-green-400",
       category: "Relaxation",
     },
     {
@@ -48,7 +48,7 @@ export default function MindfulnessPage() {
       description: "Find stability and strength like a mountain",
       duration: "15-25 min",
       icon: Mountain,
-      color: "bg-gradient-to-r from-gray-400 to-slate-400",
+      color: "bg-gray-400",
       category: "Grounding",
     },
     {
@@ -57,7 +57,7 @@ export default function MindfulnessPage() {
       description: "Cultivate compassion for yourself and others",
       duration: "10-20 min",
       icon: Waves,
-      color: "bg-gradient-to-r from-pink-400 to-rose-400",
+      color: "bg-pink-400",
       category: "Compassion",
     },
   ]
@@ -92,11 +92,11 @@ export default function MindfulnessPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-3 sm:p-6">
+    <div className="min-h-screen bg-indigo-50 p-3 sm:p-6">
       <div className="max-w-7xl mx-auto space-y-6 sm:space-y-8">
         {/* Header */}
         <div className="text-center space-y-2 sm:space-y-4">
-          <h1 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-4xl font-bold text-indigo-600">
             Mindfulness Center
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
@@ -109,7 +109,7 @@ export default function MindfulnessPage() {
           <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
             <CardContent className="p-4 sm:p-8">
               <div className="text-center space-y-4 sm:space-y-6">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto bg-indigo-500 rounded-full flex items-center justify-center">
                   <Brain className="h-12 w-12 sm:h-16 sm:w-16 text-white" />
                 </div>
                 <div>
@@ -122,7 +122,7 @@ export default function MindfulnessPage() {
                   <Button
                     onClick={togglePlayPause}
                     size="lg"
-                    className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 touch-manipulation"
+                    className="bg-indigo-600 hover:bg-indigo-700 touch-manipulation"
                   >
                     {isPlaying ? (
                       <Pause className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -205,7 +205,7 @@ export default function MindfulnessPage() {
               {quickExercises.map((exercise, index) => (
                 <Card
                   key={index}
-                  className="bg-gradient-to-br from-purple-50 to-indigo-50 border-purple-200 hover:shadow-md transition-all cursor-pointer touch-manipulation active:scale-95"
+                  className="bg-purple-50 border-purple-200 hover:shadow-md transition-all cursor-pointer touch-manipulation active:scale-95"
                 >
                   <CardContent className="p-3 sm:p-4">
                     <h4 className="font-semibold mb-2 text-sm sm:text-base">{exercise.name}</h4>

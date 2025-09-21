@@ -75,7 +75,7 @@ export function AffirmationsWidget({ user }: AffirmationsWidgetProps) {
   }
 
   return (
-    <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20">
+    <Card className="bg-primary/10 border-primary/20">
       <CardHeader>
         <CardTitle className="flex items-center space-x-2 text-primary">
           <Heart className="w-5 h-5" />

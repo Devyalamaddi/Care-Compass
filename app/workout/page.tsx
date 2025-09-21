@@ -16,7 +16,7 @@ export default function WorkoutPage() {
       id: "stress-relief",
       title: "Stress Relief Workouts",
       description: "Gentle exercises to release tension and clear your mind",
-      color: "bg-gradient-to-r from-blue-400 to-cyan-400",
+      color: "bg-blue-400",
       workouts: [
         { name: "Gentle Yoga Flow", duration: "15 min", intensity: "Low", focus: "Flexibility & Calm" },
         { name: "Walking Meditation", duration: "20 min", intensity: "Low", focus: "Mindful Movement" },
@@ -27,7 +27,7 @@ export default function WorkoutPage() {
       id: "energy-boost",
       title: "Energy Boosting",
       description: "Quick workouts to energize your body and refresh your mind",
-      color: "bg-gradient-to-r from-orange-400 to-red-400",
+      color: "bg-orange-400",
       workouts: [
         { name: "Morning Energizer", duration: "10 min", intensity: "Medium", focus: "Full Body Wake-up" },
         { name: "Cardio Burst", duration: "8 min", intensity: "High", focus: "Heart Rate & Energy" },
@@ -38,7 +38,7 @@ export default function WorkoutPage() {
       id: "mood-lift",
       title: "Mood Lifting",
       description: "Fun exercises designed to boost endorphins and improve mood",
-      color: "bg-gradient-to-r from-purple-400 to-pink-400",
+      color: "bg-purple-400",
       workouts: [
         { name: "Dance Therapy", duration: "15 min", intensity: "Medium", focus: "Joy & Expression" },
         { name: "Boxing for Mood", duration: "12 min", intensity: "High", focus: "Release & Empowerment" },
@@ -49,7 +49,7 @@ export default function WorkoutPage() {
       id: "focus-clarity",
       title: "Focus & Clarity",
       description: "Mindful movement to enhance concentration and mental clarity",
-      color: "bg-gradient-to-r from-green-400 to-emerald-400",
+      color: "bg-green-400",
       workouts: [
         { name: "Pilates Core", duration: "20 min", intensity: "Medium", focus: "Core & Concentration" },
         { name: "Balance Challenge", duration: "10 min", intensity: "Low", focus: "Stability & Focus" },
@@ -80,11 +80,11 @@ export default function WorkoutPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-blue-50 p-3 sm:p-6">
+    <div className="min-h-screen bg-emerald-50 p-3 sm:p-6">
       <div className="max-w-7xl mx-auto space-y-6 sm:space-y-8">
         {/* Header */}
         <div className="text-center space-y-2 sm:space-y-4">
-          <h1 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-4xl font-bold text-emerald-600">
             Mind-Body Workouts
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
@@ -174,7 +174,7 @@ export default function WorkoutPage() {
                   {category.workouts.map((workout, index) => (
                     <Card
                       key={index}
-                      className="bg-gradient-to-br from-gray-50 to-white border-gray-200 hover:shadow-md transition-all cursor-pointer group touch-manipulation active:scale-95"
+                      className="bg-gray-50 border-gray-200 hover:shadow-md transition-all cursor-pointer group touch-manipulation active:scale-95"
                       onClick={() => startWorkout(category.id, workout.name)}
                     >
                       <CardContent className="p-3 sm:p-4">
@@ -199,7 +199,7 @@ export default function WorkoutPage() {
                         <p className="text-xs sm:text-sm text-muted-foreground mb-4">{workout.focus}</p>
                         <Button
                           size="sm"
-                          className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 touch-manipulation"
+                          className="w-full bg-emerald-600 hover:bg-emerald-700 touch-manipulation"
                         >
                           <Play className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
                           Start Workout
@@ -214,7 +214,7 @@ export default function WorkoutPage() {
         </div>
 
         {/* Quick Start */}
-        <Card className="bg-gradient-to-r from-emerald-500 to-blue-500 text-white border-0 shadow-lg">
+        <Card className="bg-emerald-500 text-white border-0 shadow-lg">
           <CardContent className="p-4 sm:p-8 text-center">
             <h2 className="text-xl sm:text-2xl font-bold mb-4">Need an Instant Mood Boost?</h2>
             <p className="text-emerald-100 mb-6 max-w-2xl mx-auto text-sm sm:text-base">

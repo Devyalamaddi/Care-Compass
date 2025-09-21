@@ -111,7 +111,7 @@ export default function PatientDashboard() {
       </div>
 
       {/* Today's Affirmation */}
-      <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
+      <Card className="bg-blue-50 dark:bg-blue-900/20">
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <Heart className="h-5 w-5 text-pink-500" />
